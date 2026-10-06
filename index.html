@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pencarian data pemilih berdasarkan nama.">
+  <title>Pencarian Data Pemilih</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="search-card" aria-labelledby="page-title">
+      <div class="heading">
+        <p class="eyebrow">DATA PEMILIH</p>
+        <h1 id="page-title">Pencarian Data Pemilih</h1>
+        <p class="subtitle">Masukkan nama untuk mencari data pemilih.</p>
+      </div>
+
+      <form id="searchForm" class="search-form" role="search">
+        <label class="sr-only" for="searchInput">Nama pemilih</label>
+        <input
+          id="searchInput"
+          name="q"
+          type="search"
+          placeholder="Ketik nama pemilih..."
+          autocomplete="off"
+          spellcheck="false"
+          enterkeyhint="search"
+        >
+        <button type="submit" id="searchButton">Cari</button>
+      </form>
+
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+      <div id="results" class="results"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>Dibuat oleh <strong>Dwi Putra Ramadani</strong></div>
+    <div>Belik, Pemalang, Jawa Tengah ·
+      <a href="https://www.instagram.com/pxtrmd/" target="_blank" rel="noopener noreferrer">@pxtrmd</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
